@@ -35,3 +35,7 @@ Train a model:
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved. It is also possible to continue training from there later on.
+
+Create table and line plot:
+
+    ./scripts/table_and_plot.sh

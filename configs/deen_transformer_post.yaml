@@ -55,7 +55,7 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: ["bleu"]
-    model_dir: "models/deen_transformer_pre"
+    model_dir: "models/deen_transformer_post"
     overwrite: True
     shuffle: True
     use_cuda: True
@@ -83,6 +83,7 @@ model:
         hidden_size: 256
         ff_size: 512
         dropout: 0
+        layer_norm: "post"
     decoder:
         type: "transformer"
         num_layers: 1
@@ -94,3 +95,4 @@ model:
         hidden_size: 256
         ff_size: 512
         dropout: 0
+        layer_norm: "post"
